@@ -63,10 +63,6 @@ public interface MyCustomConfig {
     /** Accepts: \\s+ */
     @ConfigProperty(name = "delimiter", converter = PatternConverter.class)
     Pattern getDelimiter();
-    
-    /** Accepts: https://elypia.org/ */
-    @ConfigProperty(name = "homepage", converter = UrlConverter.class)
-    URL getHomepage();
 }
 ```
 
