@@ -9,6 +9,10 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author seth@elypia.org (Seth Falco)
+ * @since 1.0.0
+ */
 public class EnumConverterTest {
 
     @Test

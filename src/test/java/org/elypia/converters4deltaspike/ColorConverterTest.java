@@ -8,6 +8,10 @@ import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author seth@elypia.org (Seth Falco)
+ * @since 1.0.0
+ */
 public class ColorConverterTest {
 
     @Test

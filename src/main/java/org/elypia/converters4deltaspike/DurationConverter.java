@@ -22,7 +22,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.*;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * <p>Converts a duration of time to the {@link Duration} type.</p>
@@ -71,8 +71,12 @@ public class DurationConverter implements ConfigResolver.Converter<Duration> {
         try {
             return Duration.parse(value);
         } catch (DateTimeParseException ex) {
-            long number = Long.parseLong(value);
-            return Duration.of(number, unit);
+            try {
+                long number = Long.parseLong(value);
+                return Duration.of(number, unit);
+            } catch (RuntimeException rEx) {
+                throw new IllegalArgumentException("Value provided is not a valid duration String, or valid Long value and can't be converted to a Duration.", rEx);
+            }
         }
     }
 }

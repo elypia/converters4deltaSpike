@@ -12,6 +12,10 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author seth@elypia.org (Seth Falco)
+ * @since 1.0.0
+ */
 public class DurationConverterTest {
 
     @Test
@@ -55,6 +59,6 @@ public class DurationConverterTest {
     @ValueSource(strings = {"1,000", "Hello, world!", "100.000.000", "Z"})
     public void testConverteringInvalidNumbers(final String value) {
         DurationConverter converter = new DurationConverter();
-        assertThrows(NumberFormatException.class, () -> converter.convert(value));
+        assertThrows(IllegalArgumentException.class, () -> converter.convert(value));
     }
 }

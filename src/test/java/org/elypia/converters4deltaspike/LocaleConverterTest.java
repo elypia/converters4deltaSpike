@@ -6,6 +6,10 @@ import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * @author seth@elypia.org (Seth Falco)
+ * @since 1.0.0
+ */
 public class LocaleConverterTest {
 
     @Test
