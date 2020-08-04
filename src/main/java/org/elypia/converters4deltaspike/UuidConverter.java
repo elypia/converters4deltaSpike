@@ -37,7 +37,7 @@ public class UuidConverter implements ConfigResolver.Converter<UUID> {
      */
     @Override
     public UUID convert(String value) {
-        Objects.requireNonNull(value, "Regular expression can't be null.");
+        Objects.requireNonNull(value, "Value can't be null.");
         return UUID.fromString(value);
     }
 }
