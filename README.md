@@ -12,15 +12,15 @@ This library only depends on the DeltaSpike Core and slf4j API, which keeps
 this nice and slim to depend on for your project.
 
 According to the DeltaSpike documentation, DeltaSpike's configuration module 
-only provides supports
-[`String`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html),
-[`Integer`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html),
-[`Long`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html),
-[`Float`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html),
-[`Double`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html),
-[`Boolean`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html), and
-[`Class`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html).
-> Source: The official DeltaSpike [documentation][deltaspike-supported-types].
+only supports:
+* [`String`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html)
+* [`Integer`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html)
+* [`Long`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html)
+* [`Float`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html)
+* [`Double`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html)
+* [`Boolean`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html)
+* [`Class`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html)
+> Source: The official DeltaSpike [documentation][deltaspike-supported-types]
 
 Converters4DeltaSpike will add converters to support the following types:
 <!-- Listed in alphabetical order. -->
