@@ -2,18 +2,15 @@
 The [Gradle]/[Maven] import strings can be found at the maven-central badge above!
 
 ## About
-DeltaSpike supports a limited number converters by default, please see a list of
-supported types on the official [documentation][deltaspike-supported-types].  
-Converters4DeltaSpike provides additional [`ConfigResolver.Converter`] implementations for various
-types in Java which are optimized and thoroughly tested.
-This is helpful for applications, frameworks, or libraries, with a 
-lot of flexibility in configuration including the ability to use regular expression,
-dates, or enumerated types.
+DeltaSpike supports a limited number types for configuration by default, 
+please see a list of supported types on the official 
+[documentation][deltaspike-supported-types]. Converters4DeltaSpike provides 
+additional [`ConfigResolver.Converter`] implementations for various types in 
+Java which are optimized and thoroughly tested. This is helpful for applications, 
+frameworks, or libraries, with a lot of flexibility in configuration including 
+the ability to use regular expression, dates, or enumerated types.
 
-This library only depends on the DeltaSpike Core and slf4j API, so it's light 
-to depend on for your project.
-
-This will add converters to support the following types:
+This will add converters for the following types:
 <!-- Listed in alphabetical order. -->
 * [`Character`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html)
 * [`Color`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html)
@@ -27,14 +24,16 @@ This will add converters to support the following types:
 * [`UUID`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html)
 
 ## Usage
-There are no special conditions or usage guidelines for this project, 
-you can just follow the regular documentation provided by the Apache DeltaSpike project.
+There are no special conditions or usage guidelines for this project; 
+you can just follow the regular documentation provided by the 
+Apache DeltaSpike project.
 
 Please see the [documentation][deltaspike-typed-resolver-api] for more information.
 
 ### Example
 The most simple example is to create an interface based configuration and use the
-`@ConfigProperty#converter()` property to specify the desired converter for the type required.
+`@ConfigProperty#converter()` property to specify the desired converter for 
+the type required.
 
 ```java
 @Configuration(prefix = "config.")
