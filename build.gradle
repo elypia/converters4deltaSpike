@@ -32,7 +32,7 @@ ext {
 }
 
 group = "org.elypia.converters4deltaspike"
-version = "1.0.0"
+version = "1.0.1"
 description = "Provides additional configuration converters for the DeltaSpike Configuration mechanism, optimized and thoroughly tested for general use."
 
 sourceCompatibility = 11
