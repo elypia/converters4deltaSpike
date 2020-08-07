@@ -22,7 +22,7 @@ import java.net.URL;
 import java.time.Duration;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.*;
-import java.util.*;
+import java.util.Objects;
 
 /**
  * <p>Converts a duration of time to the {@link Duration} type.</p>
