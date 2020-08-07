@@ -11,7 +11,7 @@ frameworks, or libraries, with a lot of flexibility in configuration including
 the ability to use regular expression, dates, or enumerated types.
 
 This will add converters for the following types and types derived (`extends`) 
-from these them:
+from them:
 <!-- Listed in alphabetical order. -->
 * [`Character`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html)
 * [`Color`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html)
