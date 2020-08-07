@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
  */
 public class UrlConverter implements ConfigResolver.Converter<URL> {
 
-    /** A whitelist of acceptable protocols, or null to disable this. */
+    /** A list of allowed protocols, or null to disable this. */
     private final Set<String> allowedProtocols;
 
     public UrlConverter() {

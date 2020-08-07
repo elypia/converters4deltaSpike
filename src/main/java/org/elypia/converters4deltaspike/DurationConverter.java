@@ -18,8 +18,7 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.net.URL;
-import java.time.Duration;
+import java.time.*;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.*;
 import java.util.Objects;
@@ -59,10 +58,10 @@ public class DurationConverter implements ConfigResolver.Converter<Duration> {
 
     /**
      * @param value The value of the configuration property.
-     * @return A {@link URL} which represents the configuration property value.
+     * @return A {@link Period} which represents the configuration property value.
      * @throws NullPointerException If the value is null.
      * @throws IllegalArgumentException If the value is not a valid {@link Duration} {@link String},
-     * and isn't a parsing {@link Long} value to be used with the defined {@link #unit}.
+     * and isn't a valid {@link Long} value to be used with the defined {@link #unit}.
      */
     @Override
     public Duration convert(String value) {

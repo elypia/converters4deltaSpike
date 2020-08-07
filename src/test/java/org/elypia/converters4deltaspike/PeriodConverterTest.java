@@ -4,46 +4,33 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import java.net.*;
-import java.time.Duration;
+import java.time.*;
 import java.time.temporal.ChronoUnit;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author seth@elypia.org (Seth Falco)
- * @since 1.0.0
+ * @since 1.1.0
  */
-public class DurationConverterTest {
+public class PeriodConverterTest {
 
     @Test
     public void testConverteringDefault() {
-        DurationConverter converter = new DurationConverter();
+        PeriodConverter converter = new PeriodConverter();
 
-        final Duration expected = Duration.ofSeconds(1);
-        final Duration actual = converter.convert("1000");
+        final Period expected = Period.ofDays(2);
+        final Period actual = converter.convert("2");
 
         assertEquals(expected, actual);
     }
 
     @Test
     public void testConverteringDurationString() {
-        DurationConverter converter = new DurationConverter();
+        PeriodConverter converter = new PeriodConverter();
 
-        final Duration expected = Duration.ofMinutes(3064);
-        final Duration actual = converter.convert("P2DT3H4M");
-
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void testConverteringCustomTemporal() {
-        DurationConverter converter = new DurationConverter(ChronoUnit.SECONDS);
-
-        final Duration expected = Duration.ofSeconds(4);
-        final Duration actual = converter.convert("4");
+        final Period expected = Period.parse("P1Y2M3D");
+        final Period actual = converter.convert("P1Y2M3D");
 
         assertEquals(expected, actual);
     }
@@ -58,7 +45,7 @@ public class DurationConverterTest {
     @ParameterizedTest
     @ValueSource(strings = {"1,000", "Hello, world!", "100.000.000", "Z"})
     public void testConverteringInvalidNumbers(final String value) {
-        DurationConverter converter = new DurationConverter();
+        PeriodConverter converter = new PeriodConverter();
         assertThrows(IllegalArgumentException.class, () -> converter.convert(value));
     }
 }

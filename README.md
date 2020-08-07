@@ -10,7 +10,8 @@ Java which are optimized and thoroughly tested. This is helpful for applications
 frameworks, or libraries, with a lot of flexibility in configuration including 
 the ability to use regular expression, dates, or enumerated types.
 
-This will add converters for the following types:
+This will add converters for the following types and types derived (`extends`) 
+from these them:
 <!-- Listed in alphabetical order. -->
 * [`Character`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html)
 * [`Color`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html)
@@ -22,6 +23,8 @@ This will add converters for the following types:
 * [`Instant`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html)
 * [`Locale`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html)
 * [`Pattern`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html)
+* [`Period`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html)
+* [`URI`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html)
 * [`URL`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)
 * [`UUID`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html)
 
