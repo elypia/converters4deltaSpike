@@ -81,7 +81,8 @@ public class EnumConverter implements ConfigResolver.Converter<Enum> {
      * </code></pre>
      *
      * <p>
-     *     This allows validation of the type of enum loaded, so an {@link IllegalArgumentException}
+     *     This allows the use of the non-qualified {@link Enum} constant name instead,
+     *     and provides validation of the type of enum loaded, so an {@link IllegalArgumentException}
      *     can be thrown instead of an {@link ClassCastException}.
      * </p>
      *

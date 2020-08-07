@@ -14,8 +14,10 @@ This will add converters for the following types:
 <!-- Listed in alphabetical order. -->
 * [`Character`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html)
 * [`Color`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html)
+* [`Dimension`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html)
 * [`Duration`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html)
 * [`Enum`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html)
+* [`File`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html)
 * [`InetAddress`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html)
 * [`Instant`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html)
 * [`Locale`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html)
