@@ -45,6 +45,6 @@ public class DimensionConverterTest {
     @ValueSource(strings = {"3000000000", "100x3000000000", "3000000000x100", "3000000000x3000000000"})
     public void testInvalidNumberFormatException(final String value) {
         final DimensionConverter converter = new DimensionConverter();
-        assertThrows(IllegalArgumentException.class, () -> converter.convert(value));
+        assertThrows(NumberFormatException.class, () -> converter.convert(value));
     }
 }
