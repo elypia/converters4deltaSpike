@@ -143,40 +143,21 @@ public class ColorConverter implements ConfigResolver.Converter<Color> {
     public Color parseWebColor(final String value) {
         Objects.requireNonNull(value);
 
-        final String hexadecimal = value.substring(HEX_COLOR_PREFIX.length());
-        final int length = hexadecimal.length();
+        final int length = value.length();
+        final String hexString = (length == 4 || length == 5) ? value.replaceAll("[^#]", "$0$0") : value;
 
-        final int[] rgba = new int[4];
-
-        switch (length) {
-            case 3:
-                rgba[0] = Integer.parseInt(hexadecimal.substring(0, 1).repeat(2), 16);
-                rgba[1] = Integer.parseInt(hexadecimal.substring(1, 2).repeat(2), 16);
-                rgba[2] = Integer.parseInt(hexadecimal.substring(2, 3).repeat(2), 16);
-                rgba[3] = 0xFF;
-                break;
-            case 4:
-                rgba[0] = Integer.parseInt(hexadecimal.substring(0, 1).repeat(2), 16);
-                rgba[1] = Integer.parseInt(hexadecimal.substring(1, 2).repeat(2), 16);
-                rgba[2] = Integer.parseInt(hexadecimal.substring(2, 3).repeat(2), 16);
-                rgba[3] = Integer.parseInt(hexadecimal.substring(3, 4).repeat(2), 16);
-                break;
-            case 6:
-                rgba[0] = Integer.parseInt(hexadecimal.substring(0, 2), 16);
-                rgba[1] = Integer.parseInt(hexadecimal.substring(2, 4), 16);
-                rgba[2] = Integer.parseInt(hexadecimal.substring(4, 6), 16);
-                rgba[3] = 0xFF;
-                break;
-            case 8:
-                rgba[0] = Integer.parseInt(hexadecimal.substring(0, 2), 16);
-                rgba[1] = Integer.parseInt(hexadecimal.substring(2, 4), 16);
-                rgba[2] = Integer.parseInt(hexadecimal.substring(4, 6), 16);
-                rgba[3] = Integer.parseInt(hexadecimal.substring(6, 8), 16);
-                break;
+        switch (hexString.length()) {
+            case 7:
+                return Color.decode(hexString);
+            case 9:
+                return new Color(
+                    Integer.parseInt(hexString.substring(1, 3), 16),
+                    Integer.parseInt(hexString.substring(3, 5), 16),
+                    Integer.parseInt(hexString.substring(5, 7), 16),
+                    Integer.parseInt(hexString.substring(7, 9), 16)
+                );
             default:
                 throw new IllegalArgumentException("Invalid hexadecimal color provided, if literal value decoding is required, specify 0x instead of #, otherwise expecting 3, 4, 6, or 8 characters only.");
         }
-
-        return new Color(rgba[0], rgba[1], rgba[2], rgba[3]);
     }
 }
