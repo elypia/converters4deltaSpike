@@ -29,10 +29,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class PointConverterTest {
 
-    private PointConverter converter;
+    private static PointConverter converter;
 
     @BeforeAll
-    public void before() {
+    public static void beforeAll() {
         converter = new PointConverter();
     }
 
