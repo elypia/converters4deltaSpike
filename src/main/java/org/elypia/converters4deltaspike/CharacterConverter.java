@@ -28,15 +28,13 @@ public class CharacterConverter implements ConfigResolver.Converter<Character> {
     /** This prefix allows us to determine an input is a hexadecimal {@link String}. */
     private static final String HEX_PREFIX = "0x";
 
-    /** Check if the input provided is a hexadecimal {@link String}. */
-    private static final Pattern HEX_PATTERN = Pattern.compile(HEX_PREFIX + "[a-f\\d]+", Pattern.CASE_INSENSITIVE);
-
     /**
      * @param value The value of the configuration property.
      * @return A {@link Character} which represents the configuration property value.
      * @throws NullPointerException If the value is null.
      * @throws IllegalArgumentException If an empty string is provided as the value.
-     * @throws NumberFormatException If a hexadecimal {@link String} is provided, but is too large.
+     * @throws NumberFormatException If a hexadecimal {@link String} is provided, but
+     * can not be parsed as an {@link Integer}.
      */
     @Override
     public Character convert(String value) {
@@ -48,9 +46,9 @@ public class CharacterConverter implements ConfigResolver.Converter<Character> {
         if (value.length() == 1)
             return value.charAt(0);
 
-        if (HEX_PATTERN.matcher(value).matches()) {
-            int hex = Integer.parseInt(value, HEX_PREFIX.length(), value.length(), 16);
-            return (char)hex;
+        if (value.toLowerCase().startsWith(HEX_PREFIX)) {
+            int hexValue = Integer.parseInt(value, HEX_PREFIX.length(), value.length(), 16);
+            return (char)hexValue;
         }
 
         throw new IllegalArgumentException("Value can't be represented as a character.");

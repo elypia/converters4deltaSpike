@@ -16,8 +16,6 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Thread)
 public class ColorConverterBenchmark {
 
-    private static final String HEX_COLOR_PREFIX = "#";
-
     @Benchmark
     public void benchmarkSwitchToHandleAllLengthsWith3Digits() {
         switchToHandleAllLengths("#FFF");

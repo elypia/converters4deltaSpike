@@ -51,7 +51,7 @@ public class DimensionConverter implements ConfigResolver.Converter<Dimension> {
         String y = matcher.group(2);
 
         int xValue = Integer.parseInt(x);
-        int yValue = (y == null || x.equals(y)) ? xValue : Integer.parseInt(y);
+        int yValue = (y != null) ? Integer.parseInt(y) : xValue;
 
         return new Dimension(xValue, yValue);
     }
