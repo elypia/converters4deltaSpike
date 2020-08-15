@@ -24,6 +24,7 @@ from them:
 * [`Locale`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html)
 * [`Pattern`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html)
 * [`Period`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html)
+* [`Point`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html)
 * [`URI`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html)
 * [`URL`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)
 * [`UUID`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html)
