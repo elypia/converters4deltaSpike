@@ -2,10 +2,14 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.awt.*;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Shape;
+import java.awt.Window;
 import java.io.File;
 import java.util.Objects;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * <p>

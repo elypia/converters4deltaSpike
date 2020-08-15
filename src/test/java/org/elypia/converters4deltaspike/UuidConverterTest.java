@@ -2,7 +2,6 @@ package org.elypia.converters4deltaspike;
 
 import org.junit.jupiter.api.Test;
 
-import java.net.*;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

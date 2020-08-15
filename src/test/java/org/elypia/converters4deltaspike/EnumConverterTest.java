@@ -7,7 +7,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import java.time.DayOfWeek;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * @author seth@elypia.org (Seth Falco)

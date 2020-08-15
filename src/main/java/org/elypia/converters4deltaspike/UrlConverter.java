@@ -18,8 +18,11 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.net.*;
-import java.util.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Collection;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

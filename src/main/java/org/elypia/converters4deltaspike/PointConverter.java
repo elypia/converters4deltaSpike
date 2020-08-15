@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
  * @since 1.1.0
  */
 public class PointConverter implements ConfigResolver.Converter<Point> {
+
     /** Pattern used to split the {@link Point#x} and {@link Point#y} coordinate. */
     private static final Pattern POINT_SPLIT = Pattern.compile("\\s*,\\s*");
 

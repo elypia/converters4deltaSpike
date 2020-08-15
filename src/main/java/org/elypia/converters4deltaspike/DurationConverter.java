@@ -18,9 +18,11 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.time.*;
+import java.time.Duration;
+import java.time.Period;
 import java.time.format.DateTimeParseException;
-import java.time.temporal.*;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.Objects;
 
 /**

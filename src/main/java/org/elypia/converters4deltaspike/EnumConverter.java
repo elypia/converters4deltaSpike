@@ -17,12 +17,14 @@
 package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
-import org.slf4j.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.DayOfWeek;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * <p>

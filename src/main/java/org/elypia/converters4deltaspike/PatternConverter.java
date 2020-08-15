@@ -19,7 +19,8 @@ package org.elypia.converters4deltaspike;
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
 import java.util.Objects;
-import java.util.regex.*;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * Converts a regular expression into a Java {@link Pattern} object.

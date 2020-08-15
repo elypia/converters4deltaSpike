@@ -2,7 +2,8 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.util.*;
+import java.util.Locale;
+import java.util.Objects;
 
 /**
  * Converts a localization pattern into a Java {@link Locale} object.

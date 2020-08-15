@@ -18,7 +18,8 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.net.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Objects;
 
 /**

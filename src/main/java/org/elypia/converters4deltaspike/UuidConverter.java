@@ -18,8 +18,8 @@ package org.elypia.converters4deltaspike;
 
 import org.apache.deltaspike.core.api.config.ConfigResolver;
 
-import java.util.*;
-import java.util.regex.*;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * Convert a configuration property value to a {@link UUID}.
