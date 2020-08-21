@@ -1,5 +1,8 @@
-# Converters4DeltaSpike [![Matrix]][matrix-community] [![Discord]][discord-guild] [![Maven Central]][maven-page] [![Docs]][documentation] [![Build]][gitlab] [![Coverage]][gitlab] [![Donate]][elypia-donate]
-The [Gradle]/[Maven] import strings can be found at the maven-central badge above!
+<div align="center">
+
+# Converters4DeltaSpike
+[![Matrix]][matrix-community] [![Discord]][discord-guild] [![Maven Central]][maven-page] [![Docs]][documentation] [![Build]][gitlab] [![Coverage]][gitlab] [![Donate]][elypia-donate]
+</div>
 
 ## About
 DeltaSpike supports a limited number types for configuration by default, 
@@ -28,6 +31,8 @@ from them:
 * [`URI`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html)
 * [`URL`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)
 * [`UUID`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html)
+
+The [Gradle]/[Maven] import strings can be found at the maven-central badge above!
 
 ## Usage
 There are no special conditions or usage guidelines for this project; 
